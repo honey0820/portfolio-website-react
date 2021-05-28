@@ -1,6 +1,6 @@
 import React from 'react';
 import { TimeLineData } from '../../constants/constants';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider } from '../../styles/GlobalComponents';
 import {
   CarouselButton,
   CarouselButtonDot,
@@ -59,11 +59,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id cursus metus aliquam eleifend mi. Sit amet volutpat consequat mauris nunc congue nisi vitae
-      </SectionText>
+    <Section>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => {
